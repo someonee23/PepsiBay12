@@ -159,7 +159,7 @@
 	#include "../away/magshield/magshield.dm"
 	#include "../away/casino/casino.dm"
 	#include "../away_inf/yacht/yacht.dm" //INF, was away
-	#include "../away_inf/blueriver/blueriver.dm"
+	#include "../away_inf/blueriver/blueriver.dm" //INF, was away
 	#include "../away/slavers/slavers_base.dm"
 	#include "../away/mobius_rift/mobius_rift.dm"
 	#include "../away/icarus/icarus.dm"
@@ -170,7 +170,7 @@
 	#include "../away_inf/skrellscoutship/skrellscoutship.dm" //INF, was away
 
 	#include "../../code/datums/music_tracks/chasing_time.dm"
-	#include "torch_inf.dm" //for lower conflicts list, its placed here
+	#include "torch_inf.dm" //INF. for lower conflicts list, its placed here
 
 	#define using_map_DATUM /datum/map/torch
 
