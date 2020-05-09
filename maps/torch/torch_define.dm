@@ -39,5 +39,5 @@
 	playable = 1
 	recommended_players = 40
 
-	away_site_budget = 3
+	away_site_budget = 2
 	id_hud_icons = 'maps/torch/icons/assignment_hud.dmi'
