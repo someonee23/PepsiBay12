@@ -14,7 +14,6 @@
 		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/officer, /datum/job/bodyguard, /datum/job/rd, /datum/job/liaison, /datum/job/warden),
 		/datum/species/resomi  = list(HUMAN_ONLY_JOBS, /datum/job/officer, /datum/job/bodyguard, /datum/job/rd, /datum/job/liaison, /datum/job/warden),
 	)
-#undef HUMAN_ONLY_JOBS
 	species_to_branch_whitelist = list(
 		/datum/species/diona          = list(/datum/mil_branch/civilian),
 		/datum/species/nabber         = list(/datum/mil_branch/civilian),
@@ -101,7 +100,7 @@
 					species_blacklist = list()
 					species_to_job_blacklist[S.type] = species_blacklist
 				species_blacklist |= job.type
-
+#undef HUMAN_ONLY_JOBS
 /datum/map/torch/map_info(victim)
 	to_chat(victim, "<h2>Информация о карте</h2>")
 	to_chat(victim, "Вы находитесь на борту [station_name] - корабле Экспедиционного Корпуса ЦПСС. Основной задачей корабля является поиск неизвестных разумных форм жизни и исследование космоса.")
