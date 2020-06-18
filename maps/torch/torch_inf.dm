@@ -1,8 +1,8 @@
+#include "items\clothing\solgov-infinity.dm"
+//Non-Torch files, that requires Torch. Shame on you...
+
 /datum/map/torch
 	minimum_players = 10
-
-//		Non-Torch files, that requires Torch. Shame on you...
-#include "items\clothing\solgov-infinity.dm"
 
 #define HUMAN_ONLY_JOBS /datum/job/captain, /datum/job/hop, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/representative, /datum/job/sea, /datum/job/pathfinder
 	species_to_job_blacklist = list(
