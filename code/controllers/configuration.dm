@@ -780,9 +780,6 @@ var/list/gamemode_cache = list()
 
 				if("ntnet_speed_limiter")
 					ntnet_speed_limiter = text2num(value)
-	
-				if("admin_midis_allowed")
-					admin_midis_allowed = TRUE
 
 				if("default_latejoin_cooldown")
 					default_latejoin_cooldown = text2num(value) SECONDS
