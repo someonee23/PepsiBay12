@@ -143,7 +143,11 @@
 	max_skill = list(	SKILL_MEDICAL = SKILL_MAX,
 						SKILL_SCIENCE = SKILL_MAX,
 						SKILL_COMBAT  = SKILL_EXPERT,
-						SKILL_WEAPONS = SKILL_EXPERT)
+						SKILL_WEAPONS = SKILL_EXPERT,
+						SKILL_ENGINES       = SKILL_BASIC,
+						SKILL_ATMOS         = SKILL_BASIC,
+						SKILL_CONSTRUCTION	= SKILL_BASIC,
+						SKILL_ELECTRICAL	= SKILL_BASIC)
 //	required_role = list("Exploration Leader", "Expeditionary Pilot")
 
 	access = list(	access_explorer, access_maint_tunnels, access_eva, access_emergency_storage,
@@ -193,7 +197,10 @@
 						SKILL_ELECTRICAL   = SKILL_MAX,
 						SKILL_SCIENCE      = SKILL_MAX,
 						SKILL_COMBAT       = SKILL_EXPERT,
-						SKILL_WEAPONS      = SKILL_EXPERT)
+						SKILL_WEAPONS      = SKILL_EXPERT,
+						SKILL_MEDICAL   = SKILL_BASIC,
+	                    SKILL_CHEMISTRY = SKILL_BASIC,
+						SKILL_ANATOMY = SKILL_BASIC)
 //	required_role = list("Exploration Leader", "Expeditionary Pilot")
 
 	access = list(	access_explorer, access_maint_tunnels, access_eva, access_emergency_storage,

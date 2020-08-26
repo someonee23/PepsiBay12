@@ -23,7 +23,11 @@
 	                    SKILL_VIROLOGY    = SKILL_BASIC)
 
 	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
-	                    SKILL_ANATOMY     = SKILL_MAX)
+	                    SKILL_ANATOMY     = SKILL_MAX,
+						SKILL_ENGINES       = SKILL_BASIC,
+						SKILL_ATMOS         = SKILL_BASIC,
+						SKILL_CONSTRUCTION	= SKILL_BASIC,
+						SKILL_ELECTRICAL	= SKILL_BASIC)
 	skill_points = 26
 
 	access = list(access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
@@ -57,7 +61,11 @@
 	                    SKILL_ANATOMY = SKILL_BASIC)
 
 	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
-	                    SKILL_VIROLOGY    = SKILL_MAX)
+	                    SKILL_VIROLOGY    = SKILL_MAX,
+						SKILL_ENGINES       = SKILL_BASIC,
+						SKILL_ATMOS         = SKILL_BASIC,
+						SKILL_CONSTRUCTION	= SKILL_BASIC,
+						SKILL_ELECTRICAL	= SKILL_BASIC)
 	access = list(	access_medical, access_morgue, access_virology, access_maint_tunnels, access_external_airlocks,
 					access_emergency_storage,
 			        access_eva, access_surgery, access_medical_equip, access_hangar)
@@ -88,7 +96,11 @@
 	min_skill = list(   SKILL_EVA     = SKILL_BASIC,
 	                    SKILL_MEDICAL = SKILL_BASIC)
 
-	max_skill = list(   SKILL_MEDICAL	= SKILL_MAX)
+	max_skill = list(   SKILL_MEDICAL	= SKILL_MAX,
+						SKILL_ENGINES       = SKILL_BASIC,
+						SKILL_ATMOS         = SKILL_BASIC,
+						SKILL_CONSTRUCTION	= SKILL_BASIC,
+						SKILL_ELECTRICAL	= SKILL_BASIC)
 	skill_points = 18
 
 	access = list(	access_medical, access_morgue, access_surgery,
@@ -119,7 +131,11 @@
 	                    SKILL_CHEMISTRY = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
-	                    SKILL_CHEMISTRY   = SKILL_MAX)
+	                    SKILL_CHEMISTRY   = SKILL_MAX,
+						SKILL_ENGINES       = SKILL_BASIC,
+						SKILL_ATMOS         = SKILL_BASIC,
+						SKILL_CONSTRUCTION	= SKILL_BASIC,
+						SKILL_ELECTRICAL	= SKILL_BASIC)
 	skill_points = 18
 
 	access = list(access_medical, access_maint_tunnels, access_emergency_storage, access_medical_equip, access_chemistry)
@@ -146,7 +162,11 @@
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_MEDICAL     = SKILL_BASIC)
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX)
+	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
+					    SKILL_ENGINES       = SKILL_BASIC,
+						SKILL_ATMOS         = SKILL_BASIC,
+						SKILL_CONSTRUCTION	= SKILL_BASIC,
+						SKILL_ELECTRICAL	= SKILL_BASIC)
 
 	access = list(access_medical, access_morgue, access_chapel_office, access_crematorium, access_psychiatrist)
 

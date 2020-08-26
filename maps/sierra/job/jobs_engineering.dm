@@ -27,7 +27,10 @@
 						SKILL_COMPUTER     = SKILL_MAX,
 	                    SKILL_ELECTRICAL   = SKILL_MAX,
 	                    SKILL_ATMOS        = SKILL_MAX,
-	                    SKILL_ENGINES      = SKILL_MAX)
+	                    SKILL_ENGINES      = SKILL_MAX,
+						SKILL_MEDICAL   = SKILL_BASIC,
+	                    SKILL_CHEMISTRY = SKILL_BASIC,
+						SKILL_ANATOMY = SKILL_BASIC)
 
 	access = list(	access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			        access_eva, access_tech_storage, access_atmospherics, access_janitor, access_construction,
@@ -83,7 +86,10 @@
 	                    SKILL_ELECTRICAL   = SKILL_MAX,
 	                    SKILL_COMPUTER	   = SKILL_MAX,
 	                    SKILL_ATMOS        = SKILL_MAX,
-	                    SKILL_ENGINES      = SKILL_MAX)
+	                    SKILL_ENGINES      = SKILL_MAX,
+						SKILL_MEDICAL   = SKILL_BASIC,
+	                    SKILL_CHEMISTRY = SKILL_BASIC,
+						SKILL_ANATOMY = SKILL_BASIC)
 
 
 	access = list(	access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks,
@@ -132,7 +138,10 @@
 	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
 	                    SKILL_ELECTRICAL   = SKILL_MAX,
 	                    SKILL_ATMOS        = SKILL_MAX,
-	                    SKILL_ENGINES      = SKILL_MAX)
+	                    SKILL_ENGINES      = SKILL_MAX,
+						SKILL_MEDICAL   = SKILL_BASIC,
+	                    SKILL_CHEMISTRY = SKILL_BASIC,
+						SKILL_ANATOMY = SKILL_BASIC)
 
 	access = list(		access_engine, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_eva, access_janitor, access_construction,
@@ -175,7 +184,10 @@
 	                    SKILL_ELECTRICAL   = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_ELECTRICAL   = SKILL_MAX,
-	                    SKILL_COMPUTER	   = SKILL_MAX)
+	                    SKILL_COMPUTER	   = SKILL_MAX,
+						SKILL_MEDICAL   = SKILL_BASIC,
+	                    SKILL_CHEMISTRY = SKILL_BASIC,
+						SKILL_ANATOMY = SKILL_BASIC)
 
 	access = list(	access_maint_tunnels, access_network,
 			       	access_tech_storage, access_emergency_storage, access_tcomsat)
