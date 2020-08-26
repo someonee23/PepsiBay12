@@ -111,8 +111,10 @@ GLOBAL_DATUM_INIT(traitors, /datum/antagonist/traitor, new)
 	traitor_mob.StoreMemory("<b>Code Response</b>: [syndicate_code_response]", /decl/memory_options/system)
 	to_chat(traitor_mob, "Use the code words, preferably in the order provided, during regular conversation, to identify other agents. Proceed with caution, however, as everyone is a potential foe.")
 	if(istype(traitor_mob, /mob/living/silicon))
+		spawn(100)
 		sound_to(traitor_mob, 'sound/voice/AISyndiHack.ogg')
 	else
+		spawn(100)
 		sound_to(traitor_mob, 'infinity/sound/voice/syndicate_intro.ogg')
 
 /datum/antagonist/traitor/proc/spawn_uplink(var/mob/living/carbon/human/traitor_mob)
@@ -124,5 +126,5 @@ GLOBAL_DATUM_INIT(traitors, /datum/antagonist/traitor, new)
 	to_chat(killer, "<b>Your laws have been changed!</b>")
 	killer.set_zeroth_law(law, law_borg)
 	to_chat(killer, "New law: 0. [law]")
-	/*spawn(100)
-	sound_to(killer, 'sound/voice/AISyndiHack.ogg')*/
+	spawn(100)
+	sound_to(killer, 'sound/voice/AISyndiHack.ogg')
