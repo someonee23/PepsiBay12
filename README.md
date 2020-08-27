@@ -26,10 +26,10 @@
 <li>1. Установить любой другой git-клиент.  
 <a href="https://gitforwindows.org/">Git Bash</a>, SmartGit, Sourse Tree, git-scm, TortoiseGit или любой другой.
 <li>2<ul> 
-  <li>2.1. Зайти в клиент и клонировать репозиторий по ссылке: https://github.com/infinitystation/Baystation12.git. Обычно кнопка клонирования находится в левом-верхнем углу.
+  <li>2.1. Зайти в клиент и клонировать репозиторий по ссылке: https://github.com/PepsiBay/PepsiBay12.git. Обычно кнопка клонирования находится в левом-верхнем углу.
   <li>2.2. (Для Git Bash)<ul>
    <li>1. Нажмите ПКМ по папке в которой хотите создать папку с репозиторием и нажмите опцию "Git Bash Here"
-   <li>2. Введите в консоль команду `git clone https://github.com/infinitystation/Baystation12.git`
+   <li>2. Введите в консоль команду `git clone https://github.com/PepsiBay/PepsiBay12.git`
   </ul>
   </ul>
 </ul>
@@ -79,7 +79,7 @@ https://discord.gg/N4atUkH
 1. В корневой директории репозитория найдите и запустите программу mergetool.py
 2. После запуска вы увидите окно в котором вы должны ввести 4 параметра. <img src="https://pp.userapi.com/c857436/v857436830/1499d/TR6XdraONeA.jpg" alt="Mergetool GUI" style="float: right; margin-right: 10px;">
 3. В поле Remote Repo name введите любое значение, необязательно осмысленное.
-4. В поле Remote Repo Link введите <i>"https://github.com/infinitystation/Baystation12"</i>
+4. В поле Remote Repo Link введите <i>"https://github.com/PepsiBay/PepsiBay12"</i>
 5. В поле Remote Repo Branch введите master.<details>или другую ветку изменения которой вы хотите перенести на свою ветвь.</details>
 6. В поле Local Repo Branch введите master.<details>или другую ветку которую вы хотите обновить.</details>
 7. Нажмите кнопку <u>"TOGGLE UPDATE MODE"</u> для коректного обновления.
