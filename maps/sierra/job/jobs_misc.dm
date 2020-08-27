@@ -66,11 +66,12 @@
 	required_role = list("MegaMerchant") //temporary toogling off merchants while they won't become away map
 
 /datum/job/merchant/equip(var/mob/living/carbon/human/H)
+	H.mind.syndicate_awareness = SYNDICATE_SUSPICIOUSLY_AWARE
 	to_chat(H, "Ваши связи помогли вам узнать о словах, что помогут опознать местных... Особо заинтересованных покупателей:")
-	to_chat(H, "<b>Кодовые фразы</b>: <span class='danger'>[syndicate_code_phrase]</span>")
-	to_chat(H, "<b>Ответы на фразы</b>: <span class='danger'>[syndicate_code_response]</span>")
-	H.StoreMemory("<b>Кодовые Фразы</b>: [syndicate_code_phrase]", /decl/memory_options/system)
-	H.StoreMemory("<b>Ответы на фразы</b>: [syndicate_code_response]", /decl/memory_options/system)
+	to_chat(H, "<b>Кодовые фразы</b>: <span class='danger'>[codewords2string(GLOB.syndicate_code_phrase)]</span>")
+	to_chat(H, "<b>Ответы на фразы</b>: <span class='danger'>[codewords2string(GLOB.syndicate_code_response)]</span>")
+	H.StoreMemory("<b>Кодовые Фразы</b>: [codewords2string(GLOB.syndicate_code_phrase)]", /decl/memory_options/system)
+	H.StoreMemory("<b>Ответы на фразы</b>: [codewords2string(GLOB.syndicate_code_response)]", /decl/memory_options/system)
 	return ..()
 
 /datum/job/merchant_trainee

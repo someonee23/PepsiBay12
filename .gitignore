@@ -21,6 +21,7 @@ maps/*/backup/*.dmm
 # ignore config, but not subdirs
 !config/*/
 config/*
+!config/names/
 sql/test_db
 
 # vscode

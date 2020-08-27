@@ -101,14 +101,24 @@ GLOBAL_DATUM_INIT(traitors, /datum/antagonist/traitor, new)
 	give_intel(traitor_mob)
 
 /datum/antagonist/traitor/proc/give_intel(mob/living/traitor_mob)
+	ASSERT(traitor_mob)
 	give_codewords(traitor_mob)
+	ASSERT(traitor_mob.mind)
+	traitor_mob.mind.syndicate_awareness = SYNDICATE_SUSPICIOUSLY_AWARE
+
 
 /datum/antagonist/traitor/proc/give_codewords(mob/living/traitor_mob)
+	ASSERT(GLOB.syndicate_code_phrase.len)
 	to_chat(traitor_mob, "<u><b>Your employers provided you with the following information on how to identify possible allies:</b></u>")
-	to_chat(traitor_mob, "<b>Code Phrase</b>: <span class='danger'>[syndicate_code_phrase]</span>")
-	to_chat(traitor_mob, "<b>Code Response</b>: <span class='danger'>[syndicate_code_response]</span>")
-	traitor_mob.StoreMemory("<b>Code Phrase</b>: [syndicate_code_phrase]", /decl/memory_options/system)
-	traitor_mob.StoreMemory("<b>Code Response</b>: [syndicate_code_response]", /decl/memory_options/system)
+	var/code_phrase = "<b>Code Phrase</b>: [codewords2string(GLOB.syndicate_code_phrase)]"
+	to_chat(traitor_mob, code_phrase)
+	traitor_mob.mind.StoreMemory(code_phrase, /decl/memory_options/system)
+
+	ASSERT(GLOB.syndicate_code_response.len)
+	var/code_response = "<b>Code Response</b>: [codewords2string(GLOB.syndicate_code_response)]"
+	to_chat(traitor_mob, code_response)
+	traitor_mob.mind.StoreMemory(code_response, /decl/memory_options/system)
+
 	to_chat(traitor_mob, "Use the code words, preferably in the order provided, during regular conversation, to identify other agents. Proceed with caution, however, as everyone is a potential foe.")
 	if(istype(traitor_mob, /mob/living/silicon))
 		sound_to(traitor_mob, 'sound/voice/AISyndiHack.ogg')

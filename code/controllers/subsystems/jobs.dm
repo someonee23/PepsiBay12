@@ -113,10 +113,6 @@ SUBSYSTEM_DEF(jobs)
 					if(job.department_flag & GLOB.bitflags[I])
 						LAZYDISTINCTADD(positions_by_department["[GLOB.bitflags[I]]"], job.title)
 
-	// Set up syndicate phrases.
-	syndicate_code_phrase = generate_code_phrase()
-	syndicate_code_response	= generate_code_phrase()
-
 	// Set up AI spawn locations
 	spawn_empty_ai()
 
