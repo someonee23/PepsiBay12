@@ -279,6 +279,12 @@
 #define HEAT_LEVEL_2 2
 #define HEAT_LEVEL_3 3
 
+// Awareness about syndicate, it`s agents and equipment
+#define SYNDICATE_UNAWARE            0
+#define SYNDICATE_AWARE              1
+#define SYNDICATE_GREATLY_AWARE      2
+#define SYNDICATE_SUSPICIOUSLY_AWARE 3
+
 //Synthetic human temperature vals
 #define SYNTH_COLD_LEVEL_1 50
 #define SYNTH_COLD_LEVEL_2 -1
